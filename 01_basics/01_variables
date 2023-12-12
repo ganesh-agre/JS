@@ -1,0 +1,14 @@
+const accountId = 14553;
+let accountEmail = "ganesh@gmail.com";
+var accountPaassword = "123456";
+accountCity= "Mumbai";
+let accountState;
+
+//accountId = 2;
+accountEmail ="g@google.com";
+accountPaassword = "456789";
+accountCity ="jaipur";
+console.table([accountId,accountEmail,accountPaassword,accountCity,accountState]);
+/*
+use  const and let . dont use var anymore 
+*/

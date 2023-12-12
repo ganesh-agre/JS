@@ -1,0 +1,15 @@
+"use strict"; //treat all js code as latest version
+
+// alert(3+3); // we are using nodejs and not running in browser
+
+//number
+//bigint
+//string
+//boolean
+//undefined
+//null
+
+//object
+
+console.log(typeof null);// object
+console.log(typeof undefined) //undefined
