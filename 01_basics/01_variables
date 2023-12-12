@@ -12,3 +12,11 @@ console.table([accountId,accountEmail,accountPaassword,accountCity,accountState]
 /*
 use  const and let . dont use var anymore 
 */
+
+if(true){
+    const accountId= 123;
+    //accountId = 456;
+    accountEmail = "ranesh@gmail.com"; 
+    console.log(accountEmail)
+}
+console.log(accountEmail)
