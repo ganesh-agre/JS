@@ -16,3 +16,7 @@ const myFunction = function(){
     console.log("Hello India");
 }
 
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// stack(primitive), Heap memory(non-primitive)
+// primitives get copy, while non primitive gets reference

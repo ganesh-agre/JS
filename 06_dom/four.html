@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ganesh Agre</title>
+</head>
+<body>
+    
+    <ul class="lang">
+        <li>js</li>
+    </ul>
+</body>
+<script>
+    function addLang(name){
+        const li = document.createElement('li');
+        li.innerHTML = `${name}`;
+        const ul = document.querySelector('.lang').appendChild(li);
+    }
+    addLang('ruby');
+    addLang('python');
+</script>
+</html>

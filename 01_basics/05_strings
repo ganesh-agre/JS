@@ -1,0 +1,6 @@
+const name ="Ganesh";
+const repoCount = 1;
+
+//console.log(name + repoCount + "value");
+console.log(`Hello mY name is ${name} and repo count ${repoCount}`);
+console.log(name.charAt(1))
