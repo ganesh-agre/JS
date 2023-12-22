@@ -34,6 +34,20 @@ buttons.forEach(function (button) {
 });
 
 
+// solution 2
+function setBackgroundColor(color) {
+  const body = document.querySelector('body');
+  const buttons = document.querySelectorAll('.button');
+
+  buttons.forEach(function (button) {
+    button.addEventListener('click', (e) => {
+      body.style.backgroundColor = e.target.id;
+    });
+  });
+}
+setBackgroundColor();
+
+
 ```
 
 ## project 2 solution
