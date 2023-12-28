@@ -15,7 +15,11 @@
                 <input type="text">
                 <button name="add">Add New Task </button>
                 <button name="update">Upadet Task </button>
-                <h3> All Tasks</h3>
+                <div class="searchSection">
+                    <div> All Tasks</div>
+                    <input type="text" placeholder="search" onkeyup="filterList(this)">
+                </div>             
+                
             <div class="tasks">
             </div>
         </div>

@@ -47,3 +47,19 @@ function onDelete(currentTaskElement){
     taskInput.value = '';
 }
 
+function filterList(e){
+    let searchText = e.value;
+    const allTasks = document.querySelectorAll('.task');
+    for (let index = 0; index < allTasks.length; index++) {
+        const element = allTasks[index].querySelector('.taskTitle');
+        const elementTitle = element.innerHTML
+        if(elementTitle.indexOf(searchText) > -1){
+            allTasks[index].style.display = 'flex';
+        }else{
+            allTasks[index].style.display = 'none';
+        }
+        
+    }
+
+}
+
