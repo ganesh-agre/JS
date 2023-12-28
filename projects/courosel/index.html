@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Courosel</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="slideshow">
+      <div class="slide fade">
+        <p>First Slide</p>
+      </div>
+
+      <div class="slide fade">
+        <p>Second Slide</p>
+      </div>
+
+      <div class="slide fade">
+        <p>Third Slide</p>
+      </div>
+      <button class="prev" onclick="plusSlides(-1)">prev</button>
+      <button class="next" onclick="plusSlides(1)">Next</button>
+    </div>
+    <div style="text-align: center">
+      <span class="dot" onclick="showSlide(0)"></span>
+      <span class="dot" onclick="showSlide(1)"></span>
+      <span class="dot" onclick="showSlide(2)"></span>
+    </div>
+    <script src="courosel.js"></script>
+  </body>
+</html>
