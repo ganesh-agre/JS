@@ -1,0 +1,28 @@
+ul {
+  list-style-type: none;
+}
+
+.nested {
+  display: none;
+}
+
+.active {
+  display: block;
+}
+
+/* Style the caret/arrow */
+.caret {
+  cursor: pointer;
+  user-select: none; /* Prevent text selection */
+}
+
+.caret::before {
+  content: "\25B6";
+  color: black;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.caret-down::before {
+  transform: rotate(90deg);
+}
