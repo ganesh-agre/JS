@@ -1,0 +1,10 @@
+.container {
+  background-color: grey;
+  height: 20px;
+}
+
+.bar {
+  background-color: green;
+  width: 1%;
+  height: 100%;
+}
