@@ -20,7 +20,6 @@
     position: absolute;
     border-width: 5px;
     border-style: solid;
-    padding: 5px;
   }
 
   .top {
@@ -42,7 +41,7 @@
     .arrow {
       border-color: transparent #555 transparent transparent;
       right: 100%;
-      top: 50%;
+      top: 35%;
     }
   }
 }
