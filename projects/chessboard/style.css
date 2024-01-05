@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+
+  table {
+    border: 1px black solid;
+    border-collapse: collapse;
+  }
+
+  td {
+    height: 50px;
+    width: 50px;
+  }
+
+  tr:nth-child(even) {
+    td:nth-child(even) {
+      background-color: black;
+    }
+    td:nth-child(odd) {
+      background-color: white;
+    }
+  }
+
+  tr:nth-child(odd) {
+    td:nth-child(even) {
+      background-color: white;
+    }
+    td:nth-child(odd) {
+      background-color: black;
+    }
+  }
+}
