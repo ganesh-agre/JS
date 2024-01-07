@@ -32,7 +32,10 @@ function handleClick(e) {
   let element = e.target || e;
   if (!element.innerText && !isGameFinished) {
     element.append(document.createTextNode(isXturn ? "X" : "O"));
-    nonTicketdElementIndexes.splice(element.dataset.index, 1);
+    nonTicketdElementIndexes.splice(
+      nonTicketdElementIndexes.indexOf(parseInt(element.dataset.index)),
+      1
+    );
     console.log(nonTicketdElementIndexes);
     if (nonTicketdElementIndexes.length < 5) {
       checkResult(isXturn);
