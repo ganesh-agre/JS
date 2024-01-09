@@ -72,7 +72,7 @@ function displayResult() {
     score[0] === score[1]
       ? "Its Draw"
       : score[0] > score[1]
-      ? "Playes has won"
+      ? "Player has won"
       : "Computer has won";
   playerChoiceElement.style.display = "none";
   restart.style.display = "flex";
