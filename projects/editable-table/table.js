@@ -51,6 +51,7 @@ function updateData(e) {
     input.value = e.target.innerText;
     e.target.textContent = "";
     e.target.append(input);
+    input.focus();
 
     const rowIndex = e.target.closest("tr").dataset.index;
     const columnIndex = e.target.closest("td").dataset.index;
