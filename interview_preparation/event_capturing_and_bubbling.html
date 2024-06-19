@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Event Bubbling vs. Capturing</title>
+  </head>
+  <body>
+    <div id="parent" style="padding: 20px; border: 1px solid black">
+      Parent
+      <div id="child" style="padding: 20px; border: 1px solid red">Child</div>
+    </div>
+
+    <script>
+      const parent = document.getElementById("parent");
+      const child = document.getElementById("child");
+
+      // Event handler for capturing phase
+      function captureHandler(event) {
+        console.log("Capturing:", event.currentTarget.id);
+      }
+
+      // Event handler for bubbling phase
+      function bubbleHandler(event) {
+        console.log("Bubbling:", event.currentTarget.id);
+      }
+
+      // Adding event listeners
+      parent.addEventListener("click", captureHandler, true); // Capture phase
+      //parent.addEventListener("click", bubbleHandler, false); // Bubble phase
+      // child.addEventListener("click", captureHandler, true); // Capture phase
+      //child.addEventListener("click", bubbleHandler, false); // Bubble phase
+    </script>
+  </body>
+</html>
